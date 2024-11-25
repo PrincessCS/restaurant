@@ -1,0 +1,66 @@
+/*footer styling*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+footer{
+    background-color: #EFF9FA;
+    padding: 5em 5em;
+    
+  }
+  
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .footer-left img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-left p{
+    opacity: 50%;
+  }
+  
+  .footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .footer-right p{
+    text-transform: uppercase;
+  }
+  
+  .footer-right div ul li{
+    list-style: none;
+    padding-top: 3em;
+  }
+  
+  .footer-right div  ul li a{
+    color: #000;
+    opacity: 50%;
+   
+  }
+  
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6em;
+  }
+  
+  .footer-bottom-left p a{
+    color: #000;
+    opacity: 50%;
+  }
+  
+  .footer-bottom-right img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+  }
+  
+  
+  

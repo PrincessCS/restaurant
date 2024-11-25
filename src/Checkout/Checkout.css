@@ -1,0 +1,7 @@
+body{
+    background-color: #EFF9FA;
+}
+
+.checkout-container{
+    display: flex;
+}
