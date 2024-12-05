@@ -1,13 +1,14 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
-import Home from './Home'
-import Order from './Order/Order';
-import Company from './Company/Company';
-import Faq from './Faq/Faq';
+import Home from './Home';
+import Order from './Components/Order/Order';
+import Company from './Components/Company/Company';
+import Faq from './Components/Faq/Faq';
 import Cart from './Features/Cart/Cart';
-import Contact from './Contact/Contact';
-import Checkout from './Checkout/Checkout';
-import Signup from './Signup/Signup';
+import Contact from './Components/Contact/Contact';
+import Checkout from './Components/Checkout/Checkout';
+import Signup from './Components/Signup/Signup';
+import Login from './Components/Login/Login';
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Route path="*" element={<Contact />} /> 
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        
        
       </Routes>
   

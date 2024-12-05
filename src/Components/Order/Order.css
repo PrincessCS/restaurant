@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 .order-hero{
     background-color: #EFF9FA;
 }
-
 .order-hero h2{
     font-size: 3rem;
     font-weight: 700;
 }
-
 .order-hero h2 span{
     color: #35B8BE;
 }
-
 .menu-btn{
     text-decoration: none;
     background-color: transparent;
@@ -22,18 +17,30 @@
     padding: 15px 50px;
     margin-left: 1em;
   }
-
   .menu-btn:hover{
     background-color: #35B8BE;
     color: #fff;
     border: none;
   }
-
   .menu-btn:active{
     background-color: #35B8BE;
     color: #fff;
     border: none;
-
   }
+
+  /*media queries*/
+  @media(max-width:576px){
+    .order-section-btns{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .order-section-btns button{
+      border: 0.5px solid #000;
+      border-radius: 5px;
+    }
+  }
+
+
 
   

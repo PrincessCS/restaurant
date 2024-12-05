@@ -1,0 +1,102 @@
+/*Company hero section styling*/
+.company-hero {
+    background-color: #EFF9FA;
+    padding: 7em 0; 
+  }
+  .company-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .company-hero h2 span {
+    color: #35B8BE;
+  }
+
+  /* Company dining section styling */
+  .company-dining-section .company-dining-background {
+    position: relative;
+  } 
+  .company-dining-background img {
+    width: 100%;
+    height: 100%;
+  }
+  .company-dining-background .company-dining-overlay {
+    position: absolute;
+    top: 50%;
+    transform: translate(5%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  .company-dining-background .company-dining-overlay p {
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 85px;
+  }
+  .company-dining-background .company-dining-overlay p:first-of-type {
+    font-size: 4.5rem;
+    font-weight: 800;
+  }
+  
+  /* Media queries*/
+  @media(max-width: 992px) {
+    .container.company {
+      flex-direction: column;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    .container-text.company {
+      text-align: center;
+    }
+    .container-text.company h2 {
+       text-align: center;
+    }
+    .container-img.company {
+      width: 100%;
+    }
+    .company-dining-background .company-dining-overlay {
+      gap: 60px;
+    }
+    .company-dining-background .company-dining-overlay p {
+      font-size: 1rem;
+    }
+  }
+  @media(max-width: 768px) {
+    .company-dining-background .company-dining-overlay p {
+      font-size: 0.8rem;
+    }
+  }
+  @media(max-width: 576px) {
+    .company-dining-section {
+      padding: 0;
+    }
+    .company-dining-background .company-dining-overlay {
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .company-dining-background .company-dining-overlay p {
+      font-size: 0.7rem;
+    }
+    .company-dining-background .company-dining-overlay p:first-of-type {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+  }
+  @media(max-width: 480px) {
+    .company-dining-background .company-dining-overlay {
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 8px;
+      padding-right: 2em;
+    }
+    .company-dining-background .company-dining-overlay p {
+      font-size: 0.7rem;
+      line-height: 30px;
+    }
+    .company-dining-background .company-dining-overlay p:first-of-type {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+  

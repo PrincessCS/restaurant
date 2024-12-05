@@ -5,14 +5,12 @@ import "./Footer.css"
 function Footer(){
     return(
         <>
-
-<footer>
+         <footer>
             <div className="footer-container">
                 <div className="footer-left">
                     <img src="./logo.svg" alt="logo" />
                     <p>Takeaway & Delivery template <br/> for small - medium businesses.</p>
                 </div>
-
                 <div className="footer-right">
                     <div>
                         <p>Company</p>
@@ -21,10 +19,8 @@ function Footer(){
                             <li><Link to="/order">Order</Link></li>
                             <li><Link to="/faq">FAQ</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
-                        </ul>   
-                        
+                        </ul>         
                     </div>
-
                     <div>
                         <p>Template</p>
                         <ul>
@@ -34,7 +30,6 @@ function Footer(){
                             <li><a href="#">Webflow University</a></li>
                         </ul>   
                     </div>
-
                     <div>
                         <p>Flowbase</p>
                         <ul>
@@ -42,24 +37,18 @@ function Footer(){
                         </ul>
                     </div>
                 </div>
-
             </div>
-
-
             <div className="footer-bottom">
                <div className="footer-bottom-left">
                   <p>Built by <a href="#">Flowbase</a> . Powered by <a href="#">Webflow</a></p>
                </div>
-
                <div className="footer-bottom-right">
                 <img src="./instagram.svg" alt="instagram" />
                 <img src="./twitter.svg" alt="twitter" />
                 <img src="./youtube.svg" alt="youtube" />
                </div>
-            </div>
-            
+            </div>            
         </footer>
-
         </>
     );
 }

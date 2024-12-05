@@ -12,9 +12,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2em 5em;
-    margin: 0;
-    
-    
+    margin: 0;   
 }
 
 .cart-header div p{
@@ -24,38 +22,70 @@ body{
 .cart-header div p:hover{
     cursor: pointer;
 }
-
 .cart-body p{
     opacity: 50%;
     line-height: 60px;
 }
-
-
-
 .cart-body{
-    padding: 10em;
+    padding: 4em 10em;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
-    
+    gap: 10px; 
   }
-  
-  .cart-grid{
+.cart-grid{
     background-color: #EFF9FA;
     padding: 2em;
     border: 1px solid #35B8BE;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
- 
-    
+    align-items: center;   
   }
 
  .cart-grid p{
     font-weight: 700;
   }
+
+  .cart-total{
+    padding-bottom: 2em;
+  }
+
+  .cart-total button{
+    margin-top: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  @media(max-width:992px){
+    .cart-body{
+        padding: 3em;
+    }
+
+ }
+
+ @media(max-width:768px){
+    .cart-body{
+        padding: 2em 0.7em;
+    }
+    
+    .cart-grid p{
+        font-weight: 600;
+       
+    }
+ }
+
+ @media(max-width:576px){
+    .cart-body{
+        padding: 2em 1em;
+    }
+    .cart-grid{
+        background-color: #EFF9FA;
+        padding: 1em;
+        flex-direction: column;
+        justify-content: center;
+         
+      }
+    
+ }
 
 
   @media(max-width:480px){
@@ -63,7 +93,13 @@ body{
         padding: 2em 1em;
     }
     .cart-body{
-        padding: 2em 0;
+        padding: 2em 1.5em;
+    }
+  }
+
+  @media(max-width:380px){
+    .cart-body{
+        padding: 2em 1em;
     }
   }
   

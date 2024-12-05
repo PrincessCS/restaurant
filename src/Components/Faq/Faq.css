@@ -1,87 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 .faq-hero{
     background-color: #EFF9FA;
     padding: 7em 0;
 }
-
 .faq-hero h2{
     font-size: 3rem;
     font-weight: 700;
 }
-
 .faq-hero h2 span{
     color: #35B8BE;
 }
-
 .faq-nav-btns{
     margin-top: 2em;
     display: flex;
     justify-content: center;
     gap: 30px;
-  }
-  
-  .faq-btn{
+}
+.faq-btn{
     border-radius: 10px;
     padding: 15px 40px;
     border: 1px solid black;
     background-color: transparent;
     color: #000;
-  }
-  
-  .faq-btn:hover{
+} 
+.faq-btn:hover{
     color: #fff;
     border: none;
     background-color: #35B8BE;
-  }
-
-  .faq-item{
+}
+.faq-item{
     text-align: left;
-    padding: 0 4em;
-    
-  }
-
-  .faq-container{
+    padding: 0 4em;  
+}
+.faq-container{
     margin: 0;
     padding: 0;
-  }
-
-
-  .faq-title{
+}
+.faq-title{
     display: flex;
     justify-content: space-between;
     padding: 2em 3em;
     list-style: none;
-    
-  
-  }
-
-  .faq-title li{
+}
+.faq-title li{
     color: #35B8BE;
     text-align: left;
     font-weight: 700;
-  }
+ }
 
-  .faq-title span{
-    font-size: 1rem;
-    font-weight: 800;
-    opacity: 50%;
-    border: 2px solid black;
-    border-radius: 100%;
-    padding: 0.2em 0.5em;
+.faq-title span img{
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
-
-  .faq-content{
+.faq-content{
     max-height: 0;
     transition: max-height 0.3s ease;
     display: flex;
-    padding: 2em 3em;
-    
-  }
-
+    padding: 1em 3em 3em 3em;
+ }
   .faq-content p{
     text-align: left;
-    opacity: 50%;
-    
+    opacity: 50%; 
+ }
+
+  @media(max-width:992px){
+    .faq-section{
+      padding: 0;
+    }
+    .faq-item{
+      padding: 0 2em;
+    }
+  }
+  @media(max-width:768px){
+    .faq-item{
+      padding: 0 1em;
+    }
+  }
+  @media(max-width:576px){
+    .faq-nav-btns{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .faq-nav-btns button{
+      border: 0.5px solid #000;
+      border-radius: 5px;
+    }  
+  }
+  @media(max-width:480px){
+    .faq-item{
+      padding: 0 1em;
+    }
+    .faq-title .title,  .faq-content p{
+      font-size: 0.8rem;
+    }
   }
